@@ -58,6 +58,17 @@
           "title": "{{flpTitle}}",
           "subTitle": "{{flpSubtitle}}",
           "icon": "sap-icon://sales-order"
+        },
+        "salesorder-tile": {
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          },
+          "semanticObject": "salesorder",
+          "action": "tile",
+          "title": "{{flpTitle}}",
+          "subTitle": "{{flpSubtitle}}",
+          "icon": "sap-icon://sales-order"
         }
       }
     },

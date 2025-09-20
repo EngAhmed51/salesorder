@@ -18,7 +18,8 @@
     "@sapui5/ts-types": "1.92.2",
     "@ui5/cli": "^3.3.4",
     "eslint": "7.32.0",
-    "eslint-plugin-fiori-custom": "^2.2.1"
+    "eslint-plugin-fiori-custom": "^2.2.1",
+    "@sap/generator-fiori": "^1.10.5"
   },
   "scripts": {
     "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#salesorder-tile\"",
