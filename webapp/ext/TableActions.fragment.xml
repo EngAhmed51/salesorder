@@ -1,8 +1,0 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-  <!-- Add button in the LR table toolbar -->
-  <OverflowToolbarButton
-    icon="sap-icon://add"
-    type="Emphasized"
-    tooltip="Add"
-    press=".onAddPress"/>
-</core:FragmentDefinition>

@@ -41,7 +41,6 @@
       });
       return libOrCompKeysString;
     }
-    // @ts-ignore
     return new Promise(function (resolve, reject) {
       $.ajax(url)
         .done(function (manifest) {
@@ -154,10 +153,8 @@ sap.registerComponentDependencyPaths(manifestUri)
 
         // setting the app title with the i18n text
         sap.ui.getCore().attachInit(function () {
-          // @ts-ignore
           jQuery.sap.require("jquery.sap.resources");
           var sLocale = sap.ui.getCore().getConfiguration().getLanguage();
-          // @ts-ignore
           var oBundle = jQuery.sap.resources({
             url: "i18n/i18n.properties",
             locale: sLocale

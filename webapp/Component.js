@@ -1,9 +1,12 @@
 sap.ui.define(
-  ["sap/fe/core/AppComponent"],
-  function (AppComponent) {
-    "use strict";
-    return AppComponent.extend("salesorder.Component", {
-      metadata: { manifest: "json" }
-    });
-  }
+    ["sap/fe/core/AppComponent"],
+    function (Component) {
+        "use strict";
+
+        return Component.extend("salesorder.Component", {
+            metadata: {
+                manifest: "json"
+            }
+        });
+    }
 );

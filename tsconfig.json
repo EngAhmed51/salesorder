@@ -1,24 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["es2015", "dom"],
-    "allowJs": true,
+    "module": "none",
+    "noEmit": true,
     "checkJs": true,
-    "noEmit": true,                     // <-- prevents writing output files
-    "skipLibCheck": true,
-    "types": ["@sapui5/ts-types"],      // UI5 globals (sap.*) typings
-    "moduleResolution": "node",
-    "strict": false,
-    "baseUrl": "."
-  },
-  "include": [
-    "webapp/**/*.js",
-    "types/**/*.d.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "webapp/localService/**",
-    "webapp/test/**"
-  ]
+    "allowJs": true,
+    "types": [
+      "@sapui5/ts-types"
+    ]
+  }
 }
