@@ -1,0 +1,34 @@
+specVersion: "3.0"
+metadata:
+  name: salesorder
+type: application
+
+framework:
+  name: SAPUI5
+  version: 1.84.14
+  libraries:
+    - name: sap.ui.core
+    - name: sap.m
+    - name: sap.ushell
+    - name: sap.fe.core
+    - name: sap.fe.templates
+    - name: themelib_sap_fiori_3
+
+server:
+  customMiddleware:
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+
+    - name: sap-fe-mockserver
+      mountPath: /
+      afterMiddleware: compression
+      configuration:
+        services:
+          - urlPath: /sap/opu/odata4/sap/ze2e001/default/sap/ze2e001_salesorder/0001
+            metadataPath: ./webapp/localService/metadata.xml
+            mockdataPath: ./webapp/localService/data
+            generateMockData: true

@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "script"
+  },
+  "plugins": [
+    "@sap/ui5-jsdocs",
+    "fiori-custom"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@sap/ui5-jsdocs/recommended",
+    "plugin:fiori-custom/recommended"
+  ],
+  "globals": {
+    "sap": "readonly",
+    "jQuery": "readonly",
+    "$": "readonly"
+  },
+  "ignorePatterns": [
+    "webapp/localService/**",
+    "webapp/test/**",
+    "dist/**",
+    "node_modules/**"
+  ],
+  "overrides": [
+    {
+      "files": ["webapp/test/**"],
+      "env": { "qunit": true },
+      "globals": { "sinon": "readonly" }
+    }
+  ]
+}
