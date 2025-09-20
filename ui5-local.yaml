@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json@2.5
 
 specVersion: "2.5"
 metadata:
@@ -31,7 +31,7 @@ server:
     - name: sap-fe-mockserver
       beforeMiddleware: csp
       configuration:
-        service:
+        services:
           urlPath: /sap/opu/odata4/sap/ze2e001/default/sap/ze2e001_salesorder/0001
           metadataXmlPath: ./webapp/localService/metadata.xml
           mockdataRootPath: ./webapp/localService/data
