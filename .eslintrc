@@ -15,7 +15,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@sap/ui5-jsdocs/recommended",
-    "plugin:fiori-custom/recommended"
+    "plugin:@sap/eslint-plugin-fiori-custom/recommended"
   ],
   "globals": {
     "sap": "readonly",
