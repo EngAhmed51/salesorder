@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json@2.5
+# #yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
 
 specVersion: "2.5"
 metadata:
@@ -32,10 +32,10 @@ server:
       beforeMiddleware: csp
       configuration:
         services:
-          urlPath: /sap/opu/odata4/sap/ze2e001/default/sap/ze2e001_salesorder/0001
-          metadataXmlPath: ./webapp/localService/metadata.xml
-          mockdataRootPath: ./webapp/localService/data
-          generateMockData: true
+          - urlPath: /sap/opu/odata4/sap/ze2e001/default/sap/ze2e001_salesorder/0001
+            metadataXmlPath: ./webapp/localService/metadata.xml
+            mockdataRootPath: ./webapp/localService/data
+            generateMockData: true
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
