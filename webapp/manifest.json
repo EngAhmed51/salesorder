@@ -146,24 +146,8 @@
                     "name": "sap.fe.templates.ObjectPage",
                     "options": {
                         "settings": {
-                            "entitySet": "SalesOrder",
                             "editableHeaderContent": false,
-                            "controlConfiguration": {
-                                "@com.sap.vocabularies.UI.v1.FooterActions": {
-                                    "actions": {
-                                        "CustomEdit": {
-                                            "press": "salesorder.ext.controller.ObjectPageExt.onEditPressed",
-                                            "text": "Edit",
-                                            "icon": "sap-icon://edit"
-                                        },
-                                        "CustomDelete": {
-                                            "press": "salesorder.ext.controller.ObjectPageExt.onDeletePressed",
-                                            "text": "Delete",
-                                            "icon": "sap-icon://delete"
-                                        }
-                                    }
-                                }
-                            }
+                            "entitySet": "SalesOrder"
                         }
                     }
                 }
@@ -174,6 +158,15 @@
                 "sap.ui.controllerExtensions": {
                     "sap.fe.templates.ObjectPage.ObjectPageController": {
                         "controllerName": "salesorder.ext.controller.ObjectPageExt"
+                    }
+                },
+                "sap.ui.viewExtensions": {
+                    "sap.fe.templates.ObjectPage.ObjectPage": {
+                        "AfterFacet|SAP__self.SalesOrderType|@com.sap.vocabularies.UI.v1.Facets#GeneratedFacet1": {
+                            "type": "XMLFragment",
+                            "fragmentName": "salesorder.ext.fragment.CustomActions",
+                            "title": "Actions"
+                        }
                     }
                 }
             }
