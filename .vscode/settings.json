@@ -1,0 +1,5 @@
+{
+    "eslint.options": {
+        "rulesdir": ["node_modules/eslint-plugin-fiori-custom/lib/rules"]
+    }
+}

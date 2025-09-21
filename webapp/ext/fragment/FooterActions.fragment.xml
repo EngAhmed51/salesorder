@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Button
+        id="editButton"
+        icon="sap-icon://edit"
+        tooltip="Edit"
+        press="handler.onEditPressed" />
+    <Button
+        id="deleteButton"
+        icon="sap-icon://delete"
+        tooltip="Delete"
+        press="handler.onDeletePressed"
+        type="Reject" />
+</core:FragmentDefinition>

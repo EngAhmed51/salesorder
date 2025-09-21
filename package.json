@@ -11,16 +11,16 @@
   "main": "webapp/index.html",
   "dependencies": {},
  "devDependencies": {
-  "@ui5/cli": "^3.3.4",
-  "@sap/ux-ui5-tooling": "1",
-  "@sap/ux-specification": "UI5-1.84",
-  "eslint": "7.32.0",
-  "@sap/eslint-plugin-ui5-jsdocs": "2.0.5",
-  "@sapui5/ts-types": "1.92.2",
-  "eslint-plugin-fiori-custom": "2.2.1",
-  "@babel/eslint-parser": "7.14.7",
-  "@sap-ux/ui5-middleware-fe-mockserver": "2.1.25"
-},
+    "@ui5/cli": "^3.0.0",
+    "@sap/ux-ui5-tooling": "1",
+    "@sap/ux-specification": "UI5-1.84",
+    "eslint": "7.32.0",
+    "@sap/eslint-plugin-ui5-jsdocs": "2.0.5",
+    "@sapui5/ts-types": "1.92.2",
+    "eslint-plugin-fiori-custom": "2.2.1",
+    "@babel/eslint-parser": "7.14.7",
+    "@sap-ux/ui5-middleware-fe-mockserver": "^2.2.0"
+  },
   "scripts": {
     "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#salesorder-tile\"",
     "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#salesorder-tile\"",

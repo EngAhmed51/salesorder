@@ -146,9 +146,34 @@
                     "name": "sap.fe.templates.ObjectPage",
                     "options": {
                         "settings": {
+                            "entitySet": "SalesOrder",
                             "editableHeaderContent": false,
-                            "entitySet": "SalesOrder"
+                            "controlConfiguration": {
+                                "@com.sap.vocabularies.UI.v1.FooterActions": {
+                                    "actions": {
+                                        "CustomEdit": {
+                                            "press": "salesorder.ext.controller.ObjectPageExt.onEditPressed",
+                                            "text": "Edit",
+                                            "icon": "sap-icon://edit"
+                                        },
+                                        "CustomDelete": {
+                                            "press": "salesorder.ext.controller.ObjectPageExt.onDeletePressed",
+                                            "text": "Delete",
+                                            "icon": "sap-icon://delete"
+                                        }
+                                    }
+                                }
+                            }
                         }
+                    }
+                }
+            }
+        },
+        "extends": {
+            "extensions": {
+                "sap.ui.controllerExtensions": {
+                    "sap.fe.templates.ObjectPage.ObjectPageController": {
+                        "controllerName": "salesorder.ext.controller.ObjectPageExt"
                     }
                 }
             }
